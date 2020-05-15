@@ -14,4 +14,9 @@ class CustomLayout @JvmOverloads constructor(
         super.setVisibility(visibility)
         println("CustomLayout.setVisibility=$visibility")
     }
+
+    override fun setEnabled(enabled: Boolean) {
+        super.setEnabled(enabled)
+        println("CustomLayout.setEnabled=$enabled")
+    }
 }
